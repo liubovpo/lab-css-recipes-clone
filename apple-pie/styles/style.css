@@ -22,3 +22,61 @@ body {
 
 /* STYLES */
 /* Write your CSS below */
+.header {
+  background-image: url(file:///Users/lubovpozdeeva/Documents/IronHack/1_module/1_week/lab-css-recipes-clone/apple-pie/images/apple-pie.jpg);
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  height: 100vh; 
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  font-size: 1.8em;
+  color:white;
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.description{
+  padding:20px;
+}
+
+.image-box{
+  text-align: center;
+  padding:30px 0;
+  border-bottom: 1px solid black;
+}
+
+img {
+  width: 50%;
+  max-width:500px;
+}
+
+.ingredients {
+  list-style-type: "- ";
+}
+.list {
+  padding: 20px;;
+  font-size: 14px;
+}
+li{
+  margin-bottom: 3px;;
+}
+
+ol {
+  /* 1. Remove the default list style */  
+  list-style: none;
+}
+
+ol > li {
+  /* 2. Create a custom list counter */  
+  counter-increment: listcounter;
+}
+
+ol > li::before {
+  /*3. Set the new style for the list markers */
+  content: counter(listcounter) ") ";
+}
